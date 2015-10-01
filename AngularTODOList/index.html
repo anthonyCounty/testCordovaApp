@@ -17,6 +17,7 @@
         </header>
         <section id="main">
             <div id="todo-list">
+
                 <div class="templateWrapper" ng-repeat="toDoItem in toDoCtrl.todos">
                     <div class="templateContainer">
                         <input class="templateTitle" ng-class="{crossedOut: toDoItem.done}" type="text" td-text-change="toDoCtrl.changeToDoText(toDoItem)" ng-model="toDoItem.text" />
